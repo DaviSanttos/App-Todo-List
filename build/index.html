@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <style>
+        td {
+            padding: 0.5rem;
+        }
+    </style>
+</head>
+    <body class="bg-slate-50">
+      <header>
+        <div class="w-full h-14 bg-Oxford-blue flex text-white justify-end">
+          <nav class="flex justify-end w-full">
+            <button id="menu-hamburger" class="p-3 text-2xl sm:hidden">&#9776;</button>
+            <button class="bg-Zomp w-20 hidden sm:block">Sair</button>
+            </nav>
+          </div>
+      </header>
+      <section id="mobile-menu" class="bg-Oxford-blue w-full text-white absolute top-0 text-3xl flex-col text-center origin-top hidden">
+          <nav class="flex flex-col py-1 min-h-screen" aria-label="mobile">
+            <button class="flex flex-row-reverse mr-3 text-4xl mt-0" id="close">
+              &times;
+            </button>
+            <a href="index.html" class="my-10 hover:opacity-50">Nova Tarefa</a>
+            <a href="tarefas_pendendes.html" class="my-10 hover:opacity-50">Tarefas Pendentes</a>
+            <a href="concluidas.html" class="my-10 hover:opacity-50">Tarefas Concluídas</a>
+            <a href="#" class="my-10 hover:opacity-50">Sair</a>
+          </nav>
+      </section>
+      <main class="flex w-full">
+          <section id="menu" class="h-4/5 w-96 hidden sm:block">
+            <ol>
+              <a href="index.html">
+                  <li class="m-10 bg-Cambridge-blue p-5 rounded-md text-white hover:opacity-90">Nova Tarefa</li>
+              </a>
+              <a href="tarefas_pendendes.html">
+                  <li class="m-10 bg-Cambridge-blue p-5 rounded-md text-white hover:opacity-90">Tarefas Pendentes</li>
+              </a>
+              <a href="concluidas.html">
+                  <li class="m-10 bg-Cambridge-blue p-5 rounded-md text-white hover:opacity-90">Tarefas Concluídas</li>
+              </a>
+          </ol>
+          </section>
+          <section id="content" class="w-full text-center">
+            <div id="top" class="xl:w-3/4 m-auto">
+              <div class="text-center">
+                  <p class="text-4xl text-Oxford-blue mt-10">My Todo-List</p>
+              </div>
+              <div class="mt-5">
+                  <p>Defina a prioridade</p>
+              </div>
+              <div class="flex justify-center gap-5 mt-5 font-bold" >
+                  <label for="baixa" class="text-green-600">Baixa</label>
+                  <input type="radio" id="baixa" value="baixa" name="prioridade">
+                  <label for="baixa" class="text-yellow-500">Média</label>
+                  <input type="radio" id="media" value="media" name="prioridade">
+                  <label for="baixa" class="text-red-700">Urgente</label>
+                  <input type="radio" id="urgente" value="urgente" name="prioridade">
+              </div>
+                <input class="w-4/5 bg-Zomp p-3 rounded-md mt-10 text-white " type="text" value="ola">
+                <button class="bg-Cambridge-blue p-3 rounded-lg text-white md:w-20">Ok</button>
+                <div class="mt-10">
+                    <h3 class="sm:text-xl">Tarefas Adicionadas Recentemente</h3>
+                </div>
+            </div>
+              <table class="table-auto mt-10 text-start w-11/12 border-collapse border border-slate-300 text-gray-500 m-auto xl:w-3/4">
+                <thead class="bg-gray-300 text-lg rounded text-slate-800">
+                  <tr>
+                    <th class="border border-slate-300">Tarefa</th>
+                    <th class="border border-slate-300">Prioridade</th>
+                  </tr>
+                </thead>
+                <tbody class="bg-Branco text-lg">
+                  <tr>
+                    <td class="border border-slate-300">The Sliding Mr. Bones (Next Stop, Pottersville)</td>
+                    <td class="border border-slate-300 text-green-600">Baixa</td>
+                  </tr>
+                  <tr>
+                    <td class="border border-slate-300">Witchy Woman</td>
+                    <td class="border border-slate-300 text-red-700">Urgente</td>
+                  </tr>
+                  <tr>
+                    <td class="border border-slate-300">Shining Star</td>
+                    <td class="border border-slate-300 text-yellow-500">Média</td>
+                  </tr>
+                  <tr>
+                    <td class="border border-slate-300">Shining Star</td>
+                    <td class="border border-slate-300 text-yellow-500">Média</td>
+                  </tr>
+                  <tr>
+                    <td class="border border-slate-300">Shining Star</td>
+                    <td class="border border-slate-300 text-yellow-500">Média</td>
+                  </tr>
+                </tbody>
+              </table>
+          </section>
+      </main>
+    </body>
+</html>

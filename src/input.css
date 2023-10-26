@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes anima{
+    from {height: 10%;}
+    to {height: 100%;}
+}
+
+@keyframes anima-r{
+    from {height: 100%;}
+    to {height: 0%;}
+}
+
+.anim{
+    animation-name: anima;
+    animation-duration: 0.8s;
+}
+
+.anim-r{
+    animation-name: anima-r;
+    animation-duration: 0.5s;
+}
