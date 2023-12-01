@@ -54,16 +54,18 @@
               <div class="mt-5">
                   <p>Defina a prioridade</p>
               </div>
-              <div class="flex justify-center gap-5 mt-5 font-bold" >
-                  <label for="baixa" class="text-green-600">Baixa</label>
-                  <input type="radio" id="baixa" value="baixa" name="prioridade">
-                  <label for="baixa" class="text-yellow-500">Média</label>
-                  <input type="radio" id="media" value="media" name="prioridade">
-                  <label for="baixa" class="text-red-700">Urgente</label>
-                  <input type="radio" id="urgente" value="urgente" name="prioridade">
-              </div>
-                <input class="w-4/5 bg-Zomp p-3 rounded-md mt-10 text-white " type="text" value="ola">
-                <button class="bg-Cambridge-blue p-3 rounded-lg text-white md:w-20">Ok</button>
+              <form action="#">
+                <div class="flex justify-center gap-5 mt-5 font-bold" >
+                    <label for="baixa" class="text-green-600">Baixa</label>
+                    <input type="radio" id="baixa" value="baixa" name="prioridade" class="prioridade" checked>
+                    <label for="baixa" class="text-yellow-500">Média</label>
+                    <input type="radio" id="media" value="media" name="prioridade" class="prioridade">
+                    <label for="baixa" class="text-red-700">Urgente</label>
+                    <input type="radio" id="urgente" value="urgente" name="prioridade"  class="prioridade">
+                </div>
+                  <input id="txt"class="w-4/5 bg-Zomp p-3 rounded-md mt-10 text-white " type="text" autocomplete="off">
+                  <button type="submit"  class="bg-Cambridge-blue p-3 rounded-lg text-white md:w-20" id="sub">Ok</button>
+              </form>
                 <div class="mt-10">
                     <h3 class="sm:text-xl">Tarefas Adicionadas Recentemente</h3>
                 </div>
@@ -75,28 +77,7 @@
                     <th class="border border-slate-300">Prioridade</th>
                   </tr>
                 </thead>
-                <tbody class="bg-Branco text-lg">
-                  <tr>
-                    <td class="border border-slate-300">The Sliding Mr. Bones (Next Stop, Pottersville)</td>
-                    <td class="border border-slate-300 text-green-600">Baixa</td>
-                  </tr>
-                  <tr>
-                    <td class="border border-slate-300">Witchy Woman</td>
-                    <td class="border border-slate-300 text-red-700">Urgente</td>
-                  </tr>
-                  <tr>
-                    <td class="border border-slate-300">Shining Star</td>
-                    <td class="border border-slate-300 text-yellow-500">Média</td>
-                  </tr>
-                  <tr>
-                    <td class="border border-slate-300">Shining Star</td>
-                    <td class="border border-slate-300 text-yellow-500">Média</td>
-                  </tr>
-                  <tr>
-                    <td class="border border-slate-300">Shining Star</td>
-                    <td class="border border-slate-300 text-yellow-500">Média</td>
-                  </tr>
-                </tbody>
+                <tbody class="bg-Branco text-lg" id="table"></tbody>
               </table>
           </section>
       </main>
