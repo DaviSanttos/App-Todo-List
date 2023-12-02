@@ -57,7 +57,8 @@ const Table = document.querySelector('#table');
 // // Adicione um ouvinte de evento para o carregamento da página
 window.addEventListener('load', function() {
   // Verifique se a URL é a página desejada
-  if (window.location.href.includes('https://todo-list-7kdn.onrender.com/index.html') || window.location.href.includes('https://todo-list-7kdn.onrender.com')) {
+  if (window.location.href.includes('https://todo-list-7kdn.onrender.com')) {
+    
     list();
   }
 
