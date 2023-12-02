@@ -46,9 +46,10 @@ iconClose.addEventListener("click", () => {
     
 });
 
-
+if(window.location.href='https://todo-list-7kdn.onrender.com'){
+    window.location.href='https://todo-list-7kdn.onrender.com/index.html';
+}
 //receber os dados do formulario e para o envio por padrao
-window.location.href='https://todo-list-7kdn.onrender.com/index.html';
 // import './menu';
 const Form = document.querySelector('form');
 const Table = document.querySelector('#table');
